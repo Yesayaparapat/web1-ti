@@ -39,5 +39,35 @@ li:hover {
 }
 h2 {
     margin-bottom: 10px;
-    
+
+}
+img {
+    float: right;
+    width: 200px; 
+    margin: 10px;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    line-height: 100px;
+}
+
+#vertical{
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    background:blueviolet;
+}
+
+.tik {
+    display: inline;
+}
+
+li {
 }
