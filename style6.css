@@ -58,16 +58,28 @@ h1 {
     line-height: 100px;
 }
 
-#vertical{
+
+
+ul.tik {
     list-style-type: none;
-    margin:  0;
+    margin: 0;
     padding: 0;
-    background:blueviolet;
-}
-
-.tik {
-    display: inline;
-}
-
-li {
-}
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.tik li {
+    float: left;
+  }
+  
+  ul.tik li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnavbar li a:hover {
+    background-color: #cdcdcd;
+  }
