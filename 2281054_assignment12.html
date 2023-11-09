@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  .inputs {
+    display: flex;
+  }
+  .inputs input, .inputs select, .inputs button {
+    margin-right: 10px;
+  }
+  .result {
+    margin-top: 20px;
+  }
+  .result span{
+    border: 1px solid black;
+     padding: 0 160px 0 0;
+  }
+  .container{
+    width: 600px;
+    border: 1px dotted black;
+    margin: 20px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">   
+<div class="calculator">
+    <h1>A very simple JS Calculator</h1>
+  <div class="inputs">
+   Input: <input type="number" id="num1">
+    <select id="operator">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input type="number" id="num2">
+    <button onclick="calculate()">Calculate</button>
+  </div>
+  <div class="result">
+    Result: <span id="output"></span>
+  </div>
+</div>
+
+<script>
+function calculate() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var operator = document.getElementById('operator').value;
+    var output;
+    if (operator === 'add') {
+        output = num1 + num2;
+    } else if (operator === 'subtract') {
+        output = num1 - num2;
+    } else if (operator === 'multiply') {
+        output = num1 * num2;
+    } else if (operator === 'divide') {
+        output = num1 / num2;
+    }
+    document.getElementById('output').innerText = output;
+}
+</script>
+</div>
+</body>
+</html>
