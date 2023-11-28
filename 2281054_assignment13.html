@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="download.jpg" alt="Smiley" width="32" height="32">
+    <br>
+    <input type="text" onkeydown="myFunction()">
+    <br>
+    Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+    <br>
+    <h2>The onload Event</h2>
+    <br>
+    <h3>Print this document!</h3>
+    <p><b>Tip</b>: The keyboard shortcut Ctrl+P prints a page.</p>
+    <br>
+    <h3>Print this document!</h3>
+    <p><b>Tip</b>: The keyboard shortcut Ctrl+P prints a page.</p>
+    <br>
+    <script>
+        function myFunction() {
+          alert("This document is now being printed");
+        }
+        </script>
+    <script>
+        function myFunction() {
+          alert("You are about to print this document!");
+        }
+        </script>
+    <script>
+        function myFunction() {
+          alert("Page is loaded");
+        }
+        </script>
+    <script>
+        function myFunction() {
+          let x = document.getElementById("fname");
+          x.value = x.value.toUpperCase();
+        }
+        </script>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+        }
+        </script>
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+</body>
+</html>
